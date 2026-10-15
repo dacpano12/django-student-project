@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Student Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    {% include 'website/navbar.html' %}
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    {% include 'website/footer.html' %}
+</body>
+</html>

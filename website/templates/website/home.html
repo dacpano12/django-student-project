@@ -1,0 +1,16 @@
+{% extends 'website/base.html' %}
+{% block title %}Home | My Portfolio{% endblock %}
+{% block content %}
+<section class="hero">
+    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+    <h1>Hello, I'm a Student</h1>
+    <p>Welcome to my personal portfolio. This website shows my
+    background, skills, school projects, and learning journey.</p>
+    <a class="button" href="{% url 'about' %}">Learn About Me</a>
+</section>
+<section class="section">
+    <h2>What You Can Find Here</h2>
+    <p>Explore my personal information, skills, school projects,
+    and contact information.</p>
+</section>
+{% endblock %}
